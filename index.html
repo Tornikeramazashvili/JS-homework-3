@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Homework 3</title>
+</head>
+
+<body>
+    <script>
+
+        // 1.
+        let currentDay = new Date()
+
+        switch (currentDay.getDay()) {
+            case 0:
+                currentDay = "Sunday";
+                break;
+            case 1:
+                currentDay = "Monday";
+                break;
+            case 2:
+                currentDay = "Tuesday";
+                break;
+            case 3:
+                currentDay = "Wednsday";
+                break;
+            case 4:
+                currentDay = "Thursday";
+                break;
+            case 5:
+                currentDay = "Friday";
+                break;
+            case 6:
+                currentDay = "Saturday";
+        }
+
+        console.log(currentDay);
+
+        // 2.
+        for (i = 0; i < 100; i++) {
+            console.log(i)
+        }
+
+        // 3.
+        i = 0;
+
+        while (i < 50) {
+            i++;
+            console.log(i)
+        }
+
+        // 4.
+        i = 0;
+
+        do {
+            i++;
+            console.log(i)
+
+        } while (i < 150);
+
+        // 5.
+        const array = [];
+
+        for (i = 0; i < 10000; i++) {
+            array.push(i * i)
+        }
+
+        console.log(array)
+
+    </script>
+</body>
+
+</html>
